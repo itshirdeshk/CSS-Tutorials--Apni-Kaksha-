@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+            background-image: url("Road.jpg");
+            height: 300px;
+            width: 100%;
+        }
+        /* .ani{
+            width: 25%;
+            height: 200px;
+            justify-content: center;
+            align-items: center;
+
+        } */
+        img{
+            animation: CarAnimation 2s ease-in-out 4 alternate;
+        }
+        @keyframes CarAnimation {
+            from{
+                width: 25%;
+                height: 200px;
+            }
+            to{
+                /* width: 75%;
+                height: 200px; */
+                float: left;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ani">
+            <img src="Lamborgini.png" alt="This is a Lamborgini car" width="25%" height="200px">
+        </div>
+    </div>
+</body>
+</html>
